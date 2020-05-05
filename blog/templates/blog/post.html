@@ -1,0 +1,16 @@
+{% extends 'blog/base_post.html' %}
+{% load static %}
+{% block pagetitle %}{{ post.title }}{% endblock %}
+
+
+{% block title %}{{ post.title }}{% endblock%}
+{% block subtitle %} {{ post.subtitle }} {% endblock%}
+{% block author %}{{ post.author }}{% endblock%}
+{% block date %}{{ post.published_date|date:"M d, Y"}}{% endblock%}
+
+{% block content %}
+
+
+{% comment %} {{ post.formatted_markdown|safe }} {% endcomment %}
+
+{% endblock %}
