@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'markdownx',
+    #'markdownx',
     'django_summernote',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +128,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+SUMMERNOTE_THEME = 'bs4'
 
 # Markdown extensions
 MARKDOWNX_MARKDOWN_EXTENSIONS = [
